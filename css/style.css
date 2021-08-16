@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{box-sizing: border-box; color: #323232; font-family: 'Raleway', sans-serif;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+header{height: 100px; width: 100%; background:#fff;}
+header .wrap{height: 100%; width: 1200px; padding: 0 10px; margin: 0 auto; }
+header .wrap nav{display: flex; justify-content: space-between; line-height: 100px;}
+header .wrap nav .logo{display: flex; align-items: center;}
+header .wrap nav .logo img{height: 45px; margin-bottom: 10px;}
+
+header .wrap nav .personal{}
+header .wrap nav .personal img{cursor: pointer; height: 20px;}
+header .wrap nav .personal img:first-child{padding-right: 20px;}
+
+header .wrap {position: relative;}
+header .wrap .menu{position: absolute; top: 40%; display: flex;}
+header .wrap .menu > li{padding-right: 40px;}
+header .wrap .menu > li:first-child{padding-left: 200px;}
+header .wrap .menu > li > a{ color: #797979; font-size: 12px; transition: color 0.5s;}
+header .wrap .menu > li > a:hover{color: #a18b84;}
+
+main{height: 980px; background-image: url(../img_b&o/cs-home-hero.jpg); background-position: 50% 50%; background-size: cover;}
+main .dark{width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+main .dark .wrap{width: 1200px; margin: 0 auto; display: table; position: relative;}
+main .dark .wrap .txt{height: 240px; width: 100%;  text-align: center; vertical-align: middle;  margin: 340px 0;}
+main .dark .wrap .txt p:first-child{margin-bottom: 20px; line-height: 30px; color: #fff;font-size: 18px;}
+main .dark .wrap .txt h2{font-size: 48px; color: #fff; line-height: 60px; margin-bottom: 40px; font-weight: normal;}
+main .dark .wrap .txt p:nth-child(3){margin-bottom: 40px; font-size: 18px; color: #fff;}
+main .dark .wrap .txt button{width: 200px; height: 40px; background: transparent; border: 1px solid #fff; transition: background 0.5s;}
+main .dark .wrap .txt button a{color: #fff; font-size: 14px;}
+main .dark .wrap .txt button:hover{background: rgba(255,255,255,0.5);}
+
+section#top{height: 1980px; width: 100%; background: #fff;}
+section#top .wrap{width: 1200px; height: 100%; padding: 120px 10px; /*background: #faf;*/ margin: 0 auto;}
+section#top .wrap .products h3{font-size: 36px; line-height: 60px; font-weight: normal;}
+section#top .wrap .products .top_box{height: auto; display: flex; padding: 20px 0;}
+section#top .wrap .products .top_box .box:first-child{
+    width:calc(100% / 3 - 20px); height: 240px;  padding: 0 10px; margin-left: 10px;
+    background-image: url(../img_b&o/showroom1.jpg); background-position: 50% 50%; background-size: cover;}
+section#top .wrap .products .top_box .box:nth-child(2){width:calc(((100% / 3) * 2) - 20px); height: 240px; /*background: #eee;*/ margin-left: 20px;}
+section#top .wrap .products .top_box .box:nth-child(2) h2{font-size: 18px; color: #aaa; font-weight: normal;}
+section#top .wrap .products .top_box .box:nth-child(2) h2:first-child{padding-top: 50px; padding-bottom: 20px;}
+section#top .wrap .products .top_box .box:nth-child(2) h2:last-child{padding-left: 100px;}
+
+section#top .wrap .products .bottom_box{display: flex; flex-wrap: wrap;} 
+section#top .wrap .products .bottom_box .box{
+    width:calc(100% / 3 - 20px); height: 300px; padding-right: 10px; display: flex; margin-right: 20px; margin-bottom: 20px;
+    background-position: 50% 50%; background-size: cover; background-image: url(../img_b&o/background.png); display: flex; justify-content: center; overflow: hidden;
+}
+
+section#top .wrap .products .bottom_box .box .main_t{font-size: 24px; color: #fff; font-weight: normal; padding-top: 20px; position: absolute; top: 0;}
+section#top .wrap .products .bottom_box .box .inner {
+    width: 100%; height: 80px; position: absolute; bottom: 0; background: rgba(255,255,255,0.5); transform: translateY(100%); transition: transform 0.5s;
+   
+}
+section#top .wrap .products .bottom_box .box:hover .inner{transform: translateY(0);}
+section#top .wrap .products .bottom_box .box .box_product h2{display: none; transition: display 0.5s;}
+section#top .wrap .products .bottom_box .box .box_product:hover h2{display: block; }
+
+section#top .wrap .products .bottom_box .box .inner .rg_box{padding: 20px; }
+section#top .wrap .products .bottom_box .box .inner .rg_box h2{font-size: 15px;}
+section#top .wrap .products .bottom_box .box .inner .rg_box p{text-align: right; font-size: 14px;}
+
+section#top .wrap .products .bottom_box .box .box_product{background-position: 50% 50%; background-size: cover;}
+section#top .wrap .products .bottom_box .box .box_product:hover img{transform: scale(1.2); transition: transform 0.5s;}
+section#top .wrap .products .bottom_box .box:first-child{margin-left: 10px; padding-right: 0; position: relative;}
+section#top .wrap .products .bottom_box .box:nth-child(2){position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(3){margin-right: 0; position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(4){margin-left: 10px; padding: 0;overflow: hidden; position: relative;}
+section#top .wrap .products .bottom_box .box:nth-child(4) img{width: 100% ; position: absolute; left: 0; top:-60px;}
+section#top .wrap .products .bottom_box .box:nth-child(4):hover img{transform: none;}
+section#top .wrap .products .bottom_box .box:nth-child(5){margin-right:0; width:calc(100% / 3); margin-left: -20px; background: #323232;}
+
+section#top .wrap .products .bottom_box .box:nth-child(5) .box_product{padding-left: 20px;}
+
+section#top .wrap .products .bottom_box .box:nth-child(5) .box_product h3{color: #bababa; font-size: 14px;}
+section#top .wrap .products .bottom_box .box:nth-child(5) .box_product h2{color: #fff; font-size: 22px; padding-bottom: 20px;}
+section#top .wrap .products .bottom_box .box:nth-child(5) .box_product p{color: #bababa; font-size: 13px; padding-bottom: 20px;}
+section#top .wrap .products .bottom_box .box:nth-child(5) .box_product a{font-size: 14px; color: #795548;}
+
+section#top .wrap .products .bottom_box .box:nth-child(6){margin-right: 0px; margin-left: 20px; position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(7){margin-left: 10px;position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(8){position: relative; padding-right: 0;}
+
+
+
+section#top .wrap .products .bottom_box .box:nth-child(9){margin-right: 0px;position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(10){margin-left: 10px; margin-bottom: 0;position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(11){margin-bottom: 0;position: relative; padding-right: 0;}
+section#top .wrap .products .bottom_box .box:nth-child(12){margin-right: 0px; margin-bottom: 0; position: relative; overflow: hidden;position: relative; padding-right: 0;}
+
+section#top .wrap .products .bottom_box .box:nth-child(12) img{width: 100% ; position: absolute; left: 0; top:-60px; }
+section#top .wrap .products .bottom_box .box:nth-child(12):hover img{transform: scale(1.2); transition:  transform 0.5s;}
+section#top .wrap .products .bottom_box .box:nth-child(12) .dark{width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: absolute;}
+section#top .wrap .products .bottom_box .box:nth-child(12) img{width: 100% ; position: absolute; left: 0; top:-60px; }
+section#top .wrap .products .bottom_box .box:nth-child(12) h2{position: absolute; bottom: 20px; right: 20px; font-size: 18px; color: #fff; font-weight: normal;}
+
+
+section#top .wrap .products .bottom_btn{width: 100%; height: 120px; /*background: #faa;*/ display: flex; justify-content: center;}
+section#top .wrap .products button{
+    width: 200px; height: 40px; background: transparent; border: 1px solid #323232; transition: background 0.5s; text-align: center;
+    margin: 40px 0}
+section#top .wrap .products button a{font-size: 14px; }
+section#top .wrap .products button:hover{background: rgba(0,0,0,0.5);}
+
+section#middle{width: 100%; height: 600px; position: relative; overflow: hidden;}
+section#middle .video{width: 150%; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;}
+
+section#bottom{width: 100%; height: 680px; background: #fff;}
+section#bottom .wrap{width: 1200px; height: 100%; padding: 120px 10px ; /*background: #faf;*/ margin: 0 auto;}
+section#bottom .wrap .txt{}
+section#bottom .wrap .txt h2{font-size: 48px; line-height: 80px; font-weight: normal;}
+section#bottom .wrap .murchant{ width: 100%; display: flex; justify-content: center; /*background: #faa;*/ text-align: center;}
+section#bottom .wrap .murchant .box_sec{
+    width: calc(100% / 3); height: 360px; /*background: #eee;*/ margin-right: 20px; margin-top: 15px;
+}
+
+section#bottom .wrap .murchant .box_sec p{font-size:30px; padding-bottom: 20px;}
+section#bottom .wrap .murchant .box_sec:last-child{margin-right: 0;}
+section#bottom .wrap .murchant .box_sec img{ background-size: cover; background-position: 50% 50%;  height: 200px; display: block; margin: 0 auto; padding-bottom: 40px; }
+section#bottom .wrap .murchant .box_sec button{width: 120px; height: 40px; background: #323232; color: #aaaaaa; font-size: 16px; border: none; cursor: pointer; transition: background 0.5s , box-shadow 0.5s;}
+section#bottom .wrap .murchant .box_sec button:hover{background: rgba(255,255,255,0.5); box-shadow: 4px 4px 8px gray; border: 1px #323232 solid;}
+
+
+footer{width: 100%; height: 280px; background: #323232;}
+footer .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; }
+footer .top{display: flex; justify-content: space-between; }
+footer .top .logo{}
+footer .top .logo img{height: 40px; margin-top: 40px;}
+
+footer .top > nav{}
+footer .top > nav > ul{display: flex; margin-top: 40px;}
+footer .top > nav > ul > li{ margin: 0 100px;}
+footer .top > nav > ul > li p{line-height: 40px; font-size: 16px; color: #fff;}
+footer .top > nav > ul > li > ul > li > a{line-height: 40px; font-size: 16px; color: #fafafa;}
+footer .right_part{}
+footer .right_part ul{display: flex; margin-top: 80px;}
+footer .right_part ul li{margin: 0 5px; cursor: pointer;}
+footer .right_part ul li:last-child{margin-right: 0;}
+footer .right_part ul li img{height: 80px; }
+
+footer .bottom p{text-align: center; padding-top: 30px; font-size: 14px; color: #c1c1c1;}
